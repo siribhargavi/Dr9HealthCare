@@ -1,0 +1,58 @@
+/* Styling for the centered text */
+.centered-text {
+    font-size: 20px;
+   color: black;
+   font-weight:lighter;
+    text-align: center;
+    margin-top: 75px; /* Adjusted to ensure it clears the header */
+    padding: 10px 20px;
+    max-width: 100%; /* Ensure it stretches across the width of the page */
+    line-height: 1.5;
+    background-color: transparent; /* Removed background color */
+}
+
+/* Styling for the image */
+.centered-image {
+    display: block;
+    margin: 20px auto; /* Center the image horizontally */
+    width:800px;
+    height:500px;
+    border-radius: 30px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+}
+
+/* General Header Styling */
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-family: 'Arial', sans-serif; /* Clean font family for header */
+}
+
+/* Ensure proper centering on smaller screens */
+@media (max-width: 768px) {
+    .centered-text {
+        font-size: 18px; /* Reduced size for better fit */
+        margin-top: 100px; /* Adjust margin for smaller screens */
+    }
+    .centered-image {
+        max-width: 90%; /* Scale image for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .centered-text {
+        font-size: 16px; /* Smaller font for mobile */
+        margin-top: 90px;
+    }
+    .centered-image {
+        max-width: 80%; /* Further scale image for mobile */
+    }
+}

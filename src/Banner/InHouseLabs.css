@@ -1,0 +1,75 @@
+/* General container for the section */
+.in-house-labs-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #ffffff;
+    gap: 20px; /* To allow spacing between boxes */
+}
+
+/* Small compact boxes with sleek borders */
+.small-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    width: 140px;
+    height: 120px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Icons in red */
+.icon {
+    font-size: 28px;
+    color: #ff4d4d; /* Red color for the icons */
+    margin-bottom: 10px;
+}
+
+/* Main text styling */
+.text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Subtext styling */
+.subtext {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Sleek box hover effect */
+.small-box:hover {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    border-color: #d0d0d0;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .small-box {
+        width: 120px;
+        height: 100px;
+        padding: 10px;
+    }
+
+    .icon {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .subtext {
+        font-size: 10px;
+    }
+}

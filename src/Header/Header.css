@@ -1,0 +1,191 @@
+/* General Header Styling */
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    height: 70px; /* Set header height to 70px */
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Adjust side padding */
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding: 0 20px; /* Add padding inside the container */
+}
+
+/* Left Section */
+.header-left {
+    display: flex;
+    align-items: center;
+    margin-left: 0; /* Ensure it stays on the left side */
+    justify-content: flex-start; /* Align content to the left */
+    flex-grow: 1; /* Ensure the left side takes as much space as possible */
+}
+
+.logo {
+    height: 150px; /* Ensure the logo fits within the 70px header height */
+    margin-right: 15px; /* Add space between the logo and location */
+}
+
+.logo img {
+    max-height: 100%; /* Make the image fit within the logo container */
+    max-width: 100%;
+}
+
+/* Dropdown Container */
+.location {
+    display: flex;
+    align-items: center;
+    background-color: #f9fafb;
+    padding: 6px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.location:hover {
+    background-color: transparent;
+}
+
+.location-icon {
+    font-size: 20px;
+    color: #e74c3c; /* Red icon */
+    margin-right: 8px;
+}
+
+.location-label {
+    font-size: 14px;
+    color: #000;
+    margin-right: 6px;
+}
+
+.dropdown-icon {
+    font-size: 12px;
+    color: #e74c3c; /* Red dropdown icon */
+    margin-left: 6px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid black; /* Red border for search bar */
+    padding: 6px 12px;
+    width: 40%;
+    background-color: transparent;
+    color: #000;
+    border: 1.5px solid #9e9b9b;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    font-size: 14px;
+}
+
+.search-icon {
+    font-size: 16px;
+    color: #e74c3c; /* Red search icon */
+    margin-right: 10px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+.search-input::placeholder {
+    color: #bbb;
+}
+
+/* Right Section */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 15px;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+    border: 2px solid #e74c3c; /* Red border on hover */
+    color: #30B3D9; /* Cyan text on hover */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-icon {
+    margin-right: 6px;
+    font-size: 16px;
+    color: #e74c3c; /* Red icon color */
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover .nav-icon {
+    color: #e74c3c; /* Keep icons red on hover */
+}
+
+/* Support and Cart Buttons */
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.support-btn, .cart-btn {
+    background-color: transparent;
+    color: #000;
+    border: 1.5px solid #9e9b9b;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    font-size: 14px;
+}
+
+.support-btn:hover, .cart-btn:hover {
+    color: #30B3D9; /* Cyan text on hover */
+    transform: translateY(-1px);
+    border-color: #e74c3c; /* Red border on hover */
+}
+
+.icon {
+    margin-right: 6px;
+    font-size: 16px;
+    color: #e74c3c; /* Red icon */
+    transition: color 0.3s ease;
+}
+
+.support-btn:hover .icon, .cart-btn:hover .icon {
+    color: #e74c3c; /* Keep icons red on hover */
+}

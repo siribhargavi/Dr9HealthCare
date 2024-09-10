@@ -1,0 +1,69 @@
+/* Full-screen wrapper for the entire app */
+.app-wrapper {
+    position: relative;
+    min-height: 100vh; /* Cover the entire viewport height */
+    width: 100%;
+    overflow: hidden; /* Hide overflowing animation elements */
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Initial background gradient */
+    animation: gradientAnimation 15s ease infinite; /* Apply the background gradient animation */
+}
+
+/* Content wrapper to center and style your app's content */
+.content-wrapper {
+    position: relative;
+    z-index: 2; /* Ensure content is above the background animation */
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Background gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Optional Floating Elements */
+.floating-element {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    border-radius: 50%;
+    animation: float 10s infinite ease-in-out;
+}
+
+.floating-1 {
+    top: 20%;
+    left: 10%;
+}
+
+.floating-2 {
+    top: 50%;
+    right: 20%;
+}
+
+.floating-3 {
+    bottom: 10%;
+    left: 40%;
+}
+
+/* Floating animation keyframes */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

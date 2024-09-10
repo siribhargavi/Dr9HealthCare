@@ -1,0 +1,113 @@
+/* Main Checkups Section */
+.dr9-checkups-section {
+    padding: 40px 20px;
+    background-color: #f7f9fc;
+    text-align: center;
+}
+
+/* Header Section */
+.dr9-checkups-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.dr9-checkups-header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+.dr9-view-checkups-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: black;
+    background-color: 7f8c8d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dr9-view-checkups-button:hover {
+    background-color: #008b73;
+}
+
+/* Grid Layout for Checkups (Matching Style of Above Boxes) */
+.dr9-checkups-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Matching the gap between above boxes */
+    margin-top: 30px;
+}
+
+/* Checkup Boxes */
+.dr9-checkup-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    width: 180px;
+    height: 140px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.dr9-checkup-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.dr9-checkup-box h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Checkup Icon Styling */
+.dr9-checkup-icon {
+    font-size: 2.5rem;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #ff8c00;
+    color: #ffffff;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dr9-checkup-box:hover .dr9-checkup-icon {
+    background-color: #00bfa6;
+}
+
+/* Specific Box Background Colors */
+.dr9-full-body .dr9-checkup-icon {
+    background-color: #ffb74d;
+}
+
+.dr9-sexual-health .dr9-checkup-icon {
+    background-color: #80deea;
+}
+
+.dr9-allergy-checkup .dr9-checkup-icon {
+    background-color: #aed581;
+}
+
+.dr9-fever-checkup .dr9-checkup-icon {
+    background-color: #ff8a65;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    .dr9-checkups-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
